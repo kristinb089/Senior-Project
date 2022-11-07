@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Calibri, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+/* Submit button*/
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: gray;
+}
+
+/* Contact section */
+.container {
+  border-radius: 5px;
+  background-color: #EEE677;
+  padding: 10px;
+}
+
+/* Navigation */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Color and Size for Navigation */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: gray;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="./index.html">Home</a>
+  <a href="./data.html">Data</a>
+  <a href="#contact">Contact</a>
+</div>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Let us know how we are doing or message us if you have any questions.</p>
+  </div>
+  <div class="row">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Comments." style="height:150px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
